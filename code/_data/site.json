@@ -1,0 +1,21 @@
+{
+  "message": "Hola Mundo Eleventy 🦡🎈",
+  "linksDoc": [
+    {
+      "text": "Documentación de <i>11ty</i>",
+      "url": "https://www.11ty.dev/docs/"
+    },
+    {
+      "text": "Mascotas de <i>11ty</i>",
+      "url": "https://www.11ty.dev/mascot/"
+    },
+    {
+      "text": "Documentación de <i>NunJucks</i>",
+      "url": "https://mozilla.github.io/nunjucks/"
+    },
+    {
+      "text": "Curso de <i>11ty</i> de @jonmircha",
+      "url": "https://youtube.com/jonmircha"
+    }
+  ]
+}

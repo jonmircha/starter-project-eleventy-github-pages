@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  padding: 1rem;
+  max-width: 800px;
+  min-height: 100vh;
+  border: medium solid red;
+  text-align: center;
+  font-family: system-ui, sans-serif;
+}
+
+a {
+  color: #1873a5;
+  transition: all 0.3s ease-out;
+
+  &:hover {
+    color: red;
+  }
+}
+
+hr {
+  margin: 2rem auto;
+  width: 80%;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+p,
+li {
+  text-align: left;
+}
+
+.menu {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  border: thin solid red;
+
+  ul {
+    margin: 0;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+  }
+
+  li {
+    list-style: none;
+  }
+}
