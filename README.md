@@ -32,6 +32,6 @@
 1. Vincula tu carpeta con tu repositorio.
 1. Sube el contenido a _GitHub_.
 1. Configura el Servicio de _GitHub Pages_.
-1. Felíz despliegue 🥳 🦡🎈
+1. Felíz despliegue 🥳 🦡🎈, [aquí](https://jonmircha.github.io/starter-project-eleventy-github-pages/) puedes ver la demo de este _starter project_.
 
 ![Eleventy](code/img/eleventy.avif)
