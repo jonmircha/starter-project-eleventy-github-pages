@@ -8,7 +8,7 @@
     "start": "npx @11ty/eleventy --serve --port=7777",
     "clean": "rm -rf docs",
     "deploy": "npx @11ty/eleventy --pathprefix=/",
-    "deploy-subdomain": "npx @11ty/eleventy --pathprefix=/starter-project-eleventy-github-pages/"
+    "deploy-subdomain": "npx @11ty/eleventy --pathprefix=/subdirectory/"
   },
   "keywords": [
     "11ty",

@@ -1,4 +1,4 @@
-# _Starter Project_ para sitios estáticos con _11ty_ y _GitHub Pages_.
+# _Starter Project_ _11ty_ + _GitHub Pages_.
 
 ## Instrucciones
 
@@ -15,7 +15,14 @@
    npm start
    ```
 1. Comienza a crear el contenido de tu sitio.
-1. Cuando termines recuerda modificar el contenido del comando _deploy-subdomain_, reemplazando el texto _**--pathprefix=/subdirectory/**_ por _**--pathprefix=/el-nombre-de-tu-repositorio/**_.
+1. Cuando termines recuerda modificar en el _**package.json**_ el contenido del comando _**deploy-subdomain**_, reemplazando el texto:
+   ```bash
+   --pathprefix=/subdirectory/
+   ```
+   por
+   ```bash
+   --pathprefix=/el-nombre-de-tu-repositorio/
+   ```
 1. Limpia la carpeta docs y ejecuta tu despliegue:
    ```bash
    npm run clean
@@ -25,5 +32,6 @@
 1. Vincula tu carpeta con tu repositorio.
 1. Sube el contenido a _GitHub_.
 1. Configura el Servicio de _GitHub Pages_.
+1. Felíz despliegue 🥳 🦡🎈
 
 ![Eleventy](code/img/eleventy.avif)
