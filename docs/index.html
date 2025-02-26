@@ -3,63 +3,67 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Página de inicio</title>
-  <meta name="description" content="Meta descripción de la página de inicio">
+  <title>Hola Mundo desde Eleventy 🦡🎈</title>
+  <meta name="description" content="Este es un starter project para gestionar y desplegar proyectos web minimalistas con Eleventy 3 y Github Pages.">
   <link rel="icon" href="/starter-project-eleventy-github-pages/img/favicon.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-okaidia.min.css">
   <link rel="stylesheet" href="/starter-project-eleventy-github-pages/css/styles.css">
 </head>
 <body>
   <header>
-    <h2>Mi sitio con <i>11ty</i></h2>
+  <div>
+    <a href="/starter-project-eleventy-github-pages/">Mi sitio con <i>Eleventy</i></a>
     <nav class="menu">
-  <ul>
-    <li><a href="/starter-project-eleventy-github-pages/">Inicio</a></li>
-    <li><a href="/starter-project-eleventy-github-pages/acerca">Acerca</a></li>
-    <li><a href="/starter-project-eleventy-github-pages/contacto">Contacto</a></li>
-    <li><a href="/starter-project-eleventy-github-pages/blog">Blog</a></li>
-  </ul>
-</nav>
-    <img src="/starter-project-eleventy-github-pages/img/eleventy.avif" alt="Mascota 11ty">
-  </header>
+      <a href="/starter-project-eleventy-github-pages/">Inicio</a>
+      <a href="/starter-project-eleventy-github-pages/acerca">Acerca</a>
+      <a href="/starter-project-eleventy-github-pages/blog">Blog</a>
+    </nav>
+  </div>
+</header>
+
   <main>
     
-<h1>Página de inicio</h1>
-<p>
-  Hola, este es un <i>starter project</i> minimalista para crear sitios estáticos con <b><i>11ty</i></b> y desplegarlos en <i>GitHub Pages</i>.
-</p>
 <div>
-  <img src="/starter-project-eleventy-github-pages/img/eleventy.svg" alt="Eleventy">
-  <h2>+</h2>
-  <img src="/starter-project-eleventy-github-pages/img/github.svg" alt="GitHub">
+  <h1 id="hola-mundo-desde-eleventy">Hola Mundo desde Eleventy 🦡🎈</h1>
+  <p>Este es un starter project para gestionar y desplegar proyectos web minimalistas con Eleventy 3 y Github Pages.</p>
 </div>
-<hr>
-<h2>Hola Mundo Eleventy 🦡🎈</h2>
-<p>
-  Para sacarle mayor provecho a este <i>starter project</i>, te sugiero revisar los siguientes enlaces:
-</p>
-<ul>
-  
+<article class="box-message">
+  <ol>
     <li>
-      <a href="https://www.11ty.dev/docs/" target="_blank">Documentación de <i>11ty</i></a>
+      <p>
+        Edita <b><i>_data/metadata.js</i></b> con la información de tu proyecto
+        y modifica la propiedad <b><i>pathPrefix</i></b>, con el nombre de tu repositorio en <i>GitHub</i>.
+      </p>
     </li>
-  
     <li>
-      <a href="https://www.11ty.dev/mascot/" target="_blank">Mascotas de <i>11ty</i></a>
+      <p>
+        Asegura que tu repositorio tenga activado
+        <b><i>GitHub Pages</i></b> en la rama <b><i>main</i></b>, para desplegar la carpeta <b><i>docs</i></b>.
+      </p>
     </li>
-  
     <li>
-      <a href="https://mozilla.github.io/nunjucks/" target="_blank">Documentación de <i>NunJucks</i></a>
+      <p>
+        Opcionalmente, edita <b><i>eleventy.config.js</i></b> con tus
+        preferencias de configuración.
+      </p>
     </li>
-  
     <li>
-      <a href="https://www.youtube.com/watch?v=yCF9l4_E5rI" target="_blank">Curso de <i>11ty</i> de @jonmircha</a>
+      <p>Más información en la sección <a href="/starter-project-eleventy-github-pages/acerca">Acerca</a>.</p>
     </li>
-  
-</ul>
+  </ol>
+</article>
+<div class="flex-center">
+  <img src="/starter-project-eleventy-github-pages/img/eleventy.svg" alt="Eleventy Logo">
+  <img src="/starter-project-eleventy-github-pages/img/eleventy.avif" alt="Elle la mascota de Eleventy">
+  <img src="/starter-project-eleventy-github-pages/img/github.svg" alt="Github Logo">
+</div>
+
   </main>
-  <hr>
+  
 <footer>
-  🎈🦡 <small>Sitio hecho con <a href="https://www.11ty.dev/" target="_blank"><b><i>11ty</i></b></a></small> 🦡🎈
+  <div>
+    🎈🦡 <small>Sitio hecho con <a href="https://www.11ty.dev/" target="_blank"><b><i>Eleventy v3.0.0</i></b></a></small> 🦡🎈
+  </div>
 </footer>
 
   <script src="/starter-project-eleventy-github-pages/js/main.js" type="module"></script>

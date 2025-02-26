@@ -1,4 +1,6 @@
-# _Starter Project_ _11ty_ + _GitHub Pages_.
+# _Starter Project Eleventy 3 + Github Pages_
+
+Este repositorio es un _starter project_ para gestionar y desplegar el desarrollo de proyectos _web_ minimalistas con [_**Eleventy 3**_](https://www.11ty.dev/) y _**Github Pages**_.
 
 ## Instrucciones
 
@@ -14,28 +16,35 @@
    ```bash
    npm start
    ```
-1. Comienza a crear el contenido de tu sitio.
-1. Cuando termines recuerda modificar en el _**package.json**_ el contenido del comando _**deploy-subdomain**_, reemplazando el texto:
-   ```bash
-   --pathprefix=/subdirectory/
+1. Edita **`_data/metadata.js`** con la información de tu proyecto.
+   ```js
+   export default {
+     siteUrl: "https://example.com",
+     pathPrefix: "/nombre-repositorio/",
+     language: "es",
+     title: "Eleventy 3 & Github Pages Starter Project",
+     description:
+       "Este es un starter project para gestionar y desplegar proyectos web minimalistas con Eleventy 3 y Github Pages.",
+   };
    ```
-   por
-   ```bash
-   --pathprefix=/el-nombre-de-tu-repositorio/
-   ```
-1. Limpia la carpeta docs y ejecuta tu despliegue:
+1. Comienza a crear el contenido de tu proyecto web.
+1. Cuando termines de desarrollar tu proyecto, limpia la carpeta docs y ejecuta el despliegue:
    ```bash
    npm run clean
-   npm run deploy-subdomain
+   npm run build
    ```
 1. Crea un repositorio en tu cuenta de _GitHub_.
-1. Vincula tu carpeta con tu repositorio.
+1. Vincula la carpeta local con el repositorio remoto.
+1. Modifica la propiedad **`pathPrefix`** con el nombre del repositorio de _GitHub_ en el archivo **`_data/metadata.js`**.
 1. Sube el contenido a _GitHub_.
-1. Configura el Servicio de _GitHub Pages_.
-1. Felíz despliegue 🥳 🦡🎈.
+1. Asegura que el repositorio tenga activado _**GitHub Pages**_ en la rama _**main**_, para desplegar la carpeta _**docs**_.
+   ![Configurando GitHub Pages](./code/public/img/configurar-github-pages.png)
+1. ¡Listo! Lo haz logrado. Felíz despliegue 🥳 🦡🎈.
 
 [Aquí](https://jonmircha.github.io/starter-project-eleventy-github-pages/) puedes ver la demo de este _starter project_.
 
-Tambien puedes ver mi Curso de _11ty_ en _YouTube_, da clic a la siguiente imagen. 👇🏻
+Para más información revisa la sección [Acerca](https://jonmircha.github.io/starter-project-eleventy-github-pages/acerca) de la demo.
 
-[![Curso Eleventy](code/img/curso-youtube.png)](https://www.youtube.com/watch?v=yCF9l4_E5rI)
+Tambien puedes ver mi Curso de _Eleventy_ en _YouTube_, da clic a la siguiente imagen. 👇🏻
+
+[![Curso Eleventy](./code/public/img/curso-youtube-eleventy.png)](https://www.youtube.com/watch?v=yCF9l4_E5rI)

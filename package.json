@@ -1,14 +1,13 @@
 {
   "name": "starter-project-eleventy-github-pages",
-  "version": "1.0.0",
-  "description": "Starter Project para crear SSGs con 11ty y desplegarlos en GitHub Pages",
-  "main": ".eleventy.js",
+  "version": "2.0.0",
+  "description": "Starter Project para gestionar y desplegar el desarrollo de proyectos web minimalistas con Eleventy 3 y Github Pages.",
+  "main": "eleventy.config.js",
+  "type": "module",
   "scripts": {
-    "install": "npm install @11ty/eleventy@2.0.1 --save-dev",
-    "start": "npx @11ty/eleventy@2.0.1 --serve --port=7777",
-    "clean": "rm -rf docs",
-    "deploy": "npx @11ty/eleventy@2.0.1 --pathprefix=/",
-    "deploy-subdomain": "npx @11ty/eleventy@2.0.1 --pathprefix=/starter-project-eleventy-github-pages/"
+    "start": "npx @11ty/eleventy --serve --port=7777",
+    "build": "npx @11ty/eleventy",
+    "clean": "rm -rf docs"
   },
   "keywords": [
     "11ty",
@@ -18,7 +17,8 @@
   ],
   "author": "Jonathan MirCha <jonmircha@gmail.com>",
   "license": "MIT",
-  "devDependencies": {
-    "@11ty/eleventy": "^2.0.1"
+  "dependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0"
   }
 }

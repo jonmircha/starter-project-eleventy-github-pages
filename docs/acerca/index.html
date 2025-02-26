@@ -3,35 +3,133 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Página de Acerca</title>
-  <meta name="description" content="Meta descripción de la página de acerca">
+  <title>¿Cómo usar este starter project?</title>
+  <meta name="description" content="En esta página encontrarás instrucciones para configurar y personalizar este starter project.">
   <link rel="icon" href="/starter-project-eleventy-github-pages/img/favicon.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-okaidia.min.css">
   <link rel="stylesheet" href="/starter-project-eleventy-github-pages/css/styles.css">
 </head>
 <body>
   <header>
-    <h2>Mi sitio con <i>11ty</i></h2>
+  <div>
+    <a href="/starter-project-eleventy-github-pages/">Mi sitio con <i>Eleventy</i></a>
     <nav class="menu">
-  <ul>
-    <li><a href="/starter-project-eleventy-github-pages/">Inicio</a></li>
-    <li><a href="/starter-project-eleventy-github-pages/acerca">Acerca</a></li>
-    <li><a href="/starter-project-eleventy-github-pages/contacto">Contacto</a></li>
-    <li><a href="/starter-project-eleventy-github-pages/blog">Blog</a></li>
-  </ul>
-</nav>
-    <img src="/starter-project-eleventy-github-pages/img/eleventy.avif" alt="Mascota 11ty">
-  </header>
+      <a href="/starter-project-eleventy-github-pages/">Inicio</a>
+      <a href="/starter-project-eleventy-github-pages/acerca">Acerca</a>
+      <a href="/starter-project-eleventy-github-pages/blog">Blog</a>
+    </nav>
+  </div>
+</header>
+
   <main>
-    
-<h1>Página de Acerca</h1>
-<p>
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est consectetur doloribus esse fugit modi quos in at harum quidem, quas tempora iusto laboriosam, praesentium repellat pariatur sint mollitia quasi molestias.
-</p>
-<img src="/starter-project-eleventy-github-pages/img/eleventy-mascots.avif" alt="Mascotas Eleventy">
+    <h1 id="como-usar-este-starter-project">¿Cómo usar este starter project?</h1>
+<p>Para sacar el máximo provecho de este <em>starter project</em> te sugiero leer la <a href="https://www.11ty.dev/docs/">documentación oficial de <em>Eleventy</em></a> y personalizarlo a tu gusto y necesidades, pues este proyecto contiene una estructura muy básica para comenzar desarrollar proyectos web minimalistas y desplegarlos en <em>GitHub Pages</em>.</p>
+<p>A continuación te doy una revisión de las características que incluye.</p>
+<h2 id="lenguajes-de-plantillas">Lenguajes de plantillas</h2>
+<p>En <em>Eleventy</em> puedes usar difernetes <a href="https://www.11ty.dev/docs/languages/">lenguajes de plantillas</a> para crear páginas y artículos de <em>blog</em>, este <em>starter project</em> usa: <em><strong>Markdown</strong></em>, <em><strong>HTML</strong></em> y <a href="https://mozilla.github.io/nunjucks/"><em><strong>Nunjucks</strong></em></a>.</p>
+<p>Para revisar la sintaxis y estructura de dichos formatos puedes abrir en tu editor de código los archivos <em><code>index.html</code></em>, <em><code>acerca.md</code></em> y <em><code>blog.njk</code></em> que encuentras en la carpeta &quot;<em><strong><code>code</code></strong></em>&quot; de este proyecto.</p>
+<h2 id="estructura-de-proyecto">Estructura de Proyecto</h2>
+<p>La estructura de carpetas y archivos es la siguiente:</p>
+<pre class="language-terminal"><code class="language-terminal">code/
+  _data/
+  _includes/
+  public/
+  blog/
+  index.md
+  acerca.html
+  blog.njk
+docs/
+.gitignore
+eleventy.config.js
+package-lock.json
+package.json
+README.md</code></pre>
+<ul>
+<li><strong><em><code>code</code></em></strong> es la carpeta que contiene el código fuente del proyecto, dentro de ella encontrarás:
+<ul>
+<li><strong><em><code>_data</code></em></strong>: es la carpeta por defecto que <em>Eleventy</em> utiliza para almacenar datos globales a los que se puede acceder desde cualquier plantilla del proyecto. Estos datos pueden estar en archivos <em>JSON</em>, <em>YAML</em> o <em>JavaScript</em>. Sirven para inyectar contenido dinámico en las plantillas sin tener que codificar esos datos directamente en ellas. Es una forma centralizada de gestionar información reutilizable, como configuraciones o colecciones de datos, que se pueden usar en varios lugares del proyecto.</li>
+<li><strong><em><code>_includes</code></em></strong>: es la carpeta por defecto que <em>Eleventy</em> utiliza para almacenar fragmentos de plantillas o componentes reutilizables, como encabezados, pies de página o cualquier sección común que quieras incluir en varias páginas. Estos fragmentos se pueden insertar fácilmente en otras plantillas mediante la etiqueta <em>&quot;<code>include</code>&quot;</em>. De esta forma, puedes organizar y reutilizar partes comunes de tu proyecto de manera eficiente y ordenada. Revisa los archivos <em><code>layout-base.njk</code></em>, <em><code>header.njk</code></em> y <em><code>footer.njk</code></em> que encontrarás en esta carpeta y revisa su código para que veas como forman la estructura general del proyecto.</li>
+<li><strong><em><code>blog</code></em></strong>: en esta carpeta deberás colocar todos los archivos que quieres que sean artículos de <em>blog</em>, puedes usar los formatos <em>.md</em>, <em>.html</em> o <em>.njk</em> para crear tus artículos, usa el formato que mejor te convenga.</li>
+<li><strong><em><code>index.html</code></em></strong>: es un página de ejemplo en formato <em>HTML</em>.</li>
+<li><strong><em><code>acerca.md</code></em></strong>: es un página de ejemplo en formato <em>Markdown</em>.</li>
+<li><strong><em><code>blog.njk</code></em></strong>: es un página de ejemplo en formato <em>Nunjucks</em>.</li>
+</ul>
+</li>
+<li><strong><em><code>docs</code></em></strong>: es la carpeta que contiene el código estático generado por <em>Eleventy</em> que se desplegará en <em>GitHub Pages</em>, para que esto suceda, ve a la sección <strong><em>Settings</em></strong> de tu repositorio, opción <strong><em>Pages</em></strong> y en ella configura que la carpeta <strong><em><code>docs</code></em></strong> despliegue la rama <em>main</em> en <em>GitHub Pages</em>.
+<img src="/starter-project-eleventy-github-pages/img/configurar-github-pages.png" alt="Configurar GitHub Pages"></li>
+<li><strong><em><code>.gitignore</code></em></strong>: Archivo de <em>Git</em> para ignorar archivos y carpetas que no quieres que se suban al repositorio de código.</li>
+<li><strong><em><code>eleventy.config.js</code></em></strong>: Archivo de configuración de <em>Eleventy</em>.</li>
+<li><strong><em><code>packagelock.json</code></em></strong>: Archivo de dependencias <em>Node</em> del proyecto.</li>
+<li><strong><em><code>package.json</code></em></strong>: Archivo de dependencias <em>Node</em> del proyecto.</li>
+<li><strong><em><code>README.md</code></em></strong>: Archivo <em>README</em> del proyecto.</li>
+</ul>
+<h2 id="formato-de-configuracion-yaml">Formato de configuración <em>YAML</em></h2>
+<p>En <em>Eleventy</em>, el formato <em>YAML</em> se utiliza en el bloque <em>front matter</em> (al inicio de cada archivo) para definir metadatos. Estos permiten configurar la plantilla a utilizar, establecer títulos, descripciones, etiquetas, fechas y otros parámetros que Eleventy emplea para generar y organizar el contenido del sitio de manera dinámica y optimizada para SEO.</p>
+<p>Al inicio de cada uno de los archivos de plantilla de tipo página o artículo de blog encontrarás los siguientes metadatos:</p>
+<pre class="language-yaml"><code class="language-yaml"><span class="token punctuation">---</span>
+<span class="token key atrule">layout</span><span class="token punctuation">:</span> layout<span class="token punctuation">-</span>base.njk
+<span class="token key atrule">title</span><span class="token punctuation">:</span> Hola Mundo 🦡🎈
+<span class="token key atrule">description</span><span class="token punctuation">:</span> Este es un starter project para gestionar y desplegar proyectos web minimalistas con Eleventy 3 y Github Pages.
+<span class="token key atrule">tags</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">"pages"</span><span class="token punctuation">,</span> <span class="token string">"blog"</span><span class="token punctuation">,</span> <span class="token string">"peliculas"</span><span class="token punctuation">,</span> <span class="token string">"series"</span><span class="token punctuation">]</span>
+<span class="token key atrule">date</span><span class="token punctuation">:</span> <span class="token string">"2025-02-20"</span>
+<span class="token punctuation">---</span></code></pre>
+<h3 id="descripcion-de-los-campos">Descripción de los campos:</h3>
+<ul>
+<li><strong><em><code>layout</code></em></strong>: Define la plantilla que se utilizará para renderizar la página (en este caso, layout-base.njk).</li>
+<li><strong><em><code>title</code></em></strong>: Es el título de la página que se mostrará en el <code>&lt;title&gt;</code> del <em>HTML</em> y en los encabezados de la misma.</li>
+<li><strong><em><code>description</code></em></strong>: Una breve descripción del contenido de la página, útil para la optimización <em>SEO</em>.</li>
+<li><strong><em><code>tags</code></em></strong>: Lista de etiquetas para categorizar el contenido (páginas y artículos) y ayudar a organizar las colecciones.</li>
+<li><strong><em><code>date</code></em></strong>: Fecha de publicación de la página, utilizada para ordenar o mostrar la información.</li>
+</ul>
+<p>Recuerda que puedes agregar tantos metadatos como necesites en tu proyecto. Estos campos te permiten personalizar la forma en que <em>Eleventy</em> procesa, organiza y muestra tu contenido, facilitando la generación dinámica de páginas y la integración de características específicas según los requerimientos de tu proyecto.</p>
+<h2 id="archivo-de-metadatos-del-proyecto">Archivo de metadatos del proyecto</h2>
+<p>Este archivo exporta un objeto de configuración que define metadatos esenciales para el proyecto. Los atributos incluidos son:</p>
+<pre class="language-js"><code class="language-js"><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">siteUrl</span><span class="token operator">:</span> <span class="token string">"https://example.com"</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">pathPrefix</span><span class="token operator">:</span> <span class="token string">"/repo-name/"</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">language</span><span class="token operator">:</span> <span class="token string">"es"</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">title</span><span class="token operator">:</span> <span class="token string">"Eleventy 3 &amp; Github Pages Starter Project"</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">description</span><span class="token operator">:</span>
+    <span class="token string">"Este es un starter project para gestionar y desplegar proyectos web minimalistas con Eleventy 3 y Github Pages."</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre>
+<ul>
+<li><strong><em><code>siteURL</code></em></strong>: La URL principal del proyecto.</li>
+<li><strong><em><code>pathPrefix</code></em></strong>: Define el prefijo de la ruta del proyecto, esto es fundamental para que las rutas y enlaces generados sean correctos. Cuando se despliega en:
+<ul>
+<li>Una subcarpeta del servidor: el valor debe ser el nombre de dicha carpeta, incluyendo las &quot;<strong><code>/</code></strong>&quot; del inicio y final como en el código de ejemplo.</li>
+<li>La carpeta raíz del servidor: el valor debe ser &quot;<strong><code>/</code></strong>&quot;.</li>
+</ul>
+</li>
+<li><strong><em><code>language</code></em></strong>: El idioma del proyecto.</li>
+<li><strong><em><code>title</code></em></strong>: El título del proyecto, que puede aparecer en la etiqueta <code>&lt;title&gt;</code> del <em>HTML</em>.</li>
+<li><strong><em><code>description</code></em></strong>: Una breve descripción del proyecto, útil para SEO y para proporcionar contexto sobre el propósito del mismo.</li>
+</ul>
+<p>Puedes ver un ejemplo de cómo se invocan estos metadatos en el archivo <strong><em><code>layout-base.njk</code></em></strong>.</p>
+<p>Recuerda que puedes agregar tantos metadatos como necesites en tu proyecto.</p>
+<div class="box-message">
+<h3 id="importante-si-despliegas-en-github-pages">¡Importante! Si despliegas en <em>GitHub Pages</em>:</h3>
+<p>Debes cambiar el valor del atributo <strong><em><code>pathPrefix</code></em></strong> al nombre de tu repositorio en <em>GitHub</em>. Por ejemplo, si tu repositorio se llama <strong><em><code>mi-proyecto</code></em></strong>, actualiza este valor a &quot;<strong><em><code>/mi-proyecto/</code></em></strong>&quot;.</p>
+</div>
+<h2 id="rutas-y-enlaces-de-la-carpeta-public">Rutas y enlaces de la carpeta <em>Public</em></h2>
+<div class="box-message">
+<h3 id="importante"><strong>¡Importante!</strong></h3>
+<p>Para un correcto despliegue de tus archivos públicos (los que están en la carpeta <code>public</code>) como imágenes, tipografías, archivos <em>CSS</em> o <em>JS</em>, etc; debes enlazarlos pensando en que están desde la raíz del servidor por ejemplo:</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>/css/styles.css<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>/js/main.js<span class="token punctuation">"</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>module<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>/img/eleventy.svg<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Eleventy Logo<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>/acerca/<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Acerca<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span></code></pre>
+<p>Cómo ves en los ejemplos de código, todas las rutas empiezan con la <code>/</code> que hace referencia a la raíz del servidor.</p>
+</div>
+
   </main>
-  <hr>
+  
 <footer>
-  🎈🦡 <small>Sitio hecho con <a href="https://www.11ty.dev/" target="_blank"><b><i>11ty</i></b></a></small> 🦡🎈
+  <div>
+    🎈🦡 <small>Sitio hecho con <a href="https://www.11ty.dev/" target="_blank"><b><i>Eleventy v3.0.0</i></b></a></small> 🦡🎈
+  </div>
 </footer>
 
   <script src="/starter-project-eleventy-github-pages/js/main.js" type="module"></script>

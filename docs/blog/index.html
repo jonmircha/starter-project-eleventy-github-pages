@@ -3,64 +3,113 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Página de Blog</title>
-  <meta name="description" content="">
+  <title>Bienvenido a mi Blog</title>
+  <meta name="description" content="Esta plantilla es un ejemplo de cómo configurar la funcionalidad de blog en tu proyecto web con este starter project minimalista.">
   <link rel="icon" href="/starter-project-eleventy-github-pages/img/favicon.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-okaidia.min.css">
   <link rel="stylesheet" href="/starter-project-eleventy-github-pages/css/styles.css">
 </head>
 <body>
   <header>
-    <h2>Mi sitio con <i>11ty</i></h2>
+  <div>
+    <a href="/starter-project-eleventy-github-pages/">Mi sitio con <i>Eleventy</i></a>
     <nav class="menu">
-  <ul>
-    <li><a href="/starter-project-eleventy-github-pages/">Inicio</a></li>
-    <li><a href="/starter-project-eleventy-github-pages/acerca">Acerca</a></li>
-    <li><a href="/starter-project-eleventy-github-pages/contacto">Contacto</a></li>
-    <li><a href="/starter-project-eleventy-github-pages/blog">Blog</a></li>
-  </ul>
-</nav>
-    <img src="/starter-project-eleventy-github-pages/img/eleventy.avif" alt="Mascota 11ty">
-  </header>
+      <a href="/starter-project-eleventy-github-pages/">Inicio</a>
+      <a href="/starter-project-eleventy-github-pages/acerca">Acerca</a>
+      <a href="/starter-project-eleventy-github-pages/blog">Blog</a>
+    </nav>
+  </div>
+</header>
+
   <main>
     
-<h1>Página de Blog</h1>
-<h2>Artículos del blog ordenados ascendentemente</h2>
+<h1 id="bienvenido-a-mi-blog">Bienvenido a mi Blog</h1>
+<p>Esta plantilla es un ejemplo de cómo configurar la funcionalidad de blog en tu proyecto web con este starter project minimalista.</p>
+<h2 id="leyendo-articulos">Leyendo Artículos</h2>
+<p>
+  Revisa el código fuente de esta plantilla para que veas como invocar la lectura de tus artículos en base a las diferentes categorías (<b><i><code>collections</code></i></b>) a las que pertenece
+</p>
+<h3 id="ordenados-ascendentemente">Ordenados Ascendentemente</h3>
 <ul>
   
-    <li><a href="/starter-project-eleventy-github-pages/libro-2/"> Reseña del libro 2 - 2024-01-09</a></li>
+    <li><a href="/starter-project-eleventy-github-pages/blog/"> Bienvenido a mi Blog - 2025-01-08</a></li>
   
-    <li><a href="/starter-project-eleventy-github-pages/libro-1/"> Reseña del libro 1 - 2024-02-22</a></li>
+    <li><a href="/starter-project-eleventy-github-pages/blog/the-lost-canvas/"> Saint Seiya The Lost Canvas - 2025-01-09</a></li>
   
-    <li><a href="/starter-project-eleventy-github-pages/libro-3/"> Reseña del libro 3 - 2024-05-23</a></li>
+    <li><a href="/starter-project-eleventy-github-pages/blog/mugen-train/"> Demon Slayer Mugen Train - 2025-05-23</a></li>
   
-    <li><a href="/starter-project-eleventy-github-pages/pelicula-2/"> Reseña de la película 2 - 2024-07-17</a></li>
+    <li><a href="/starter-project-eleventy-github-pages/blog/demon-slayer/"> Demon Slayer - 2025-07-17</a></li>
   
-    <li><a href="/starter-project-eleventy-github-pages/pelicula-3/"> Reseña de la película 3 - 2024-08-20</a></li>
+    <li><a href="/starter-project-eleventy-github-pages/blog/ousama-ranking/"> Ousama Ranking - 2025-08-20</a></li>
   
-    <li><a href="/starter-project-eleventy-github-pages/pelicula-1/"> Reseña de la película 1 - 2024-11-11</a></li>
+    <li><a href="/starter-project-eleventy-github-pages/blog/code-white/"> Spy X Family Code White - 2025-10-20</a></li>
+  
+    <li><a href="/starter-project-eleventy-github-pages/blog/the-first-slamdunk/"> The First SlamDunk - 2025-11-11</a></li>
   
 </ul>
 <hr>
-<h2>Artículos del blog ordenados descendentemente</h2>
+<h3 id="ordenados-descendentemente">Ordenados Descendentemente</h3>
 <ul>
   
-    <li><a href="/starter-project-eleventy-github-pages/pelicula-1/"> Reseña de la película 1 - 2024-11-11</a></li>
+    <li><a href="/starter-project-eleventy-github-pages/blog/the-first-slamdunk/"> The First SlamDunk - 2025-11-11</a></li>
   
-    <li><a href="/starter-project-eleventy-github-pages/pelicula-3/"> Reseña de la película 3 - 2024-08-20</a></li>
+    <li><a href="/starter-project-eleventy-github-pages/blog/code-white/"> Spy X Family Code White - 2025-10-20</a></li>
   
-    <li><a href="/starter-project-eleventy-github-pages/pelicula-2/"> Reseña de la película 2 - 2024-07-17</a></li>
+    <li><a href="/starter-project-eleventy-github-pages/blog/ousama-ranking/"> Ousama Ranking - 2025-08-20</a></li>
   
-    <li><a href="/starter-project-eleventy-github-pages/libro-3/"> Reseña del libro 3 - 2024-05-23</a></li>
+    <li><a href="/starter-project-eleventy-github-pages/blog/demon-slayer/"> Demon Slayer - 2025-07-17</a></li>
   
-    <li><a href="/starter-project-eleventy-github-pages/libro-1/"> Reseña del libro 1 - 2024-02-22</a></li>
+    <li><a href="/starter-project-eleventy-github-pages/blog/mugen-train/"> Demon Slayer Mugen Train - 2025-05-23</a></li>
   
-    <li><a href="/starter-project-eleventy-github-pages/libro-2/"> Reseña del libro 2 - 2024-01-09</a></li>
+    <li><a href="/starter-project-eleventy-github-pages/blog/the-lost-canvas/"> Saint Seiya The Lost Canvas - 2025-01-09</a></li>
+  
+    <li><a href="/starter-project-eleventy-github-pages/blog/"> Bienvenido a mi Blog - 2025-01-08</a></li>
+  
+</ul>
+<hr>
+<h3 id="ordenados-por-categoria-existentes">Ordenados por Categoría Existentes</h3>
+<p>
+  Recuerda que puedes definir tus propias categorías (<b><i><code>collections</code></i></b>) en los metadatos de tus plantillas de páginas y artículos, desde el atributo <b><i><code>tags</code></i></b> del formato <b><i><code>YAML</code></i></b>, las categorías que a continuación se muestran son un simple ejemplo demostrativo de este <i>starter project</i>.
+</p>
+<p>
+  Para más información consulta el apartado en cuestión de la sección <a href="/starter-project-eleventy-github-pages/acerca/#formato-de-configuracion-yaml">Acerca</a> de este <i>starter project</i>.
+</p>
+<h4 id="peliculas">Películas</h4>
+<ul>
+  
+    <li><a href="/starter-project-eleventy-github-pages/blog/mugen-train/"> Demon Slayer Mugen Train - 2025-05-23</a></li>
+  
+    <li><a href="/starter-project-eleventy-github-pages/blog/code-white/"> Spy X Family Code White - 2025-10-20</a></li>
+  
+    <li><a href="/starter-project-eleventy-github-pages/blog/the-first-slamdunk/"> The First SlamDunk - 2025-11-11</a></li>
+  
+</ul>
+<h4 id="series">Series</h4>
+<ul>
+  
+    <li><a href="/starter-project-eleventy-github-pages/blog/the-lost-canvas/"> Saint Seiya The Lost Canvas - 2025-01-09</a></li>
+  
+    <li><a href="/starter-project-eleventy-github-pages/blog/demon-slayer/"> Demon Slayer - 2025-07-17</a></li>
+  
+    <li><a href="/starter-project-eleventy-github-pages/blog/ousama-ranking/"> Ousama Ranking - 2025-08-20</a></li>
+  
+</ul>
+<h4 id="paginas">Páginas</h4>
+<ul>
+  
+    <li><a href="/starter-project-eleventy-github-pages/"> Hola Mundo desde Eleventy 🦡🎈 - 2025-01-06</a></li>
+  
+    <li><a href="/starter-project-eleventy-github-pages/acerca/"> ¿Cómo usar este starter project? - 2025-01-07</a></li>
+  
+    <li><a href="/starter-project-eleventy-github-pages/blog/"> Bienvenido a mi Blog - 2025-01-08</a></li>
   
 </ul>
   </main>
-  <hr>
+  
 <footer>
-  🎈🦡 <small>Sitio hecho con <a href="https://www.11ty.dev/" target="_blank"><b><i>11ty</i></b></a></small> 🦡🎈
+  <div>
+    🎈🦡 <small>Sitio hecho con <a href="https://www.11ty.dev/" target="_blank"><b><i>Eleventy v3.0.0</i></b></a></small> 🦡🎈
+  </div>
 </footer>
 
   <script src="/starter-project-eleventy-github-pages/js/main.js" type="module"></script>
