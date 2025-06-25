@@ -1,4 +1,4 @@
-# _Starter Project Eleventy 3 + Github Pages_
+# _Minimalist Starter Project Eleventy 3 + Github Pages_
 
 Este repositorio es un _starter project_ para gestionar y desplegar el desarrollo de proyectos _web_ minimalistas con [_**Eleventy 3**_](https://www.11ty.dev/) y _**Github Pages**_.
 

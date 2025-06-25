@@ -1,5 +1,5 @@
 export default {
-  siteUrl: "https://example.com",
+  siteUrl: "https://jonmircha.github.io/",
   pathPrefix: "/starter-project-eleventy-github-pages/",
   language: "es",
   title: "Eleventy 3 & Github Pages Starter Project",
